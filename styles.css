@@ -1,1 +1,131 @@
 /*  your css code here. If applicable */
+/* Head */
+.head {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    background-color: #a4d9eb;
+    border: 5px solid #9bbcc2;
+    border-radius: 20px;
+    position: relative; /* For positioning the light and other elements */
+}
+
+/* Light */
+.light {
+    position: absolute;
+    top: -20px; /* Positioned above the head */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Bulb */
+.bulb {
+    width: 30px;
+    height: 30px;
+    background-color: #ffa500;
+    border-radius: 50%; /* Perfect circle */
+    position: relative;
+    z-index: 2; /* On top of the stick */
+}
+
+/* Light Stick */
+.stick {
+    width: 10px;
+    height: 15px;
+    background-color: #808080;
+    position: absolute;
+    left: 50%;
+    bottom: 0; /* Positioned at the bottom of the bulb */
+    transform: translateX(-50%); /* Centering the stick */
+}
+
+/* Ears */
+.ears {
+    position: absolute;
+    top: 50%; /* Vertically centered */
+    transform: translateY(-50%); /* Adjust vertical centering */
+}
+
+/* Left Ear */
+.ear.left {
+    width: 10px;
+    height: 50px;
+    background-color: #c90a0a;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    left: -10px; /* Positioned against the left side of the head */
+}
+
+/* Right Ear */
+.ear.right {
+    width: 10px;
+    height: 50px;
+    background-color: #c90a0a;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    right: -10px; /* Positioned against the right side of the head */
+}
+
+/* Eyes */
+.eyes {
+    position: absolute;
+    top: 30px; /* 25px from the top of the head */
+    left: 50%;
+    transform: translateX(-50%); /* Centering eyes */
+}
+
+/* Eye */
+.eye {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 5px solid #00b3ff;
+    border-radius: 50%; /* Perfect circle */
+    display: inline-block; /* For horizontal alignment */
+    margin: 0 10px; /* 20px gap between eyes */
+}
+
+/* Nose */
+.nose {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #c90a0a; /* Triangle pointing up */
+    position: absolute;
+    top: 70px; /* Centered vertically */
+    left: 50%;
+    transform: translateX(-50%); /* Centering nose */
+}
+
+/* Mouth */
+.mouth {
+    width: 100px;
+    height: 25px;
+    background-color: #dedede;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px; /* 25px from the bottom of the head */
+    left: 50%;
+    transform: translateX(-50%); /* Centering mouth */
+}
+
+/* Teeth */
+.tooth {
+    width: 5px;
+    height: 25px; /* Full height of mouth */
+    background-color: black;
+    display: inline-block; /* For horizontal alignment */
+    margin: 0 5px; /* Even spacing */
+}
+
+.tooth:first-child {
+    margin-left: 2.5px; /* Half space before first tooth */
+}
+
+.tooth:last-child {
+    margin-right: 2.5px; /* Half space after last tooth */
+}
