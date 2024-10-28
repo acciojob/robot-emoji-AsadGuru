@@ -24,6 +24,7 @@
     top: -20px; /* Positioned above the head */
     left: 50%;
     transform: translateX(-50%);
+	align-items: center;
 }
 
 /* Bulb */
@@ -49,6 +50,7 @@
 
 /* Ears */
 .ears {
+	display:flex;
     position: absolute;
     top: 50%; /* Vertically centered */
     transform: translateY(-50%); /* Adjust vertical centering */
@@ -81,6 +83,7 @@
     position: absolute;
     top: 30px; /* 25px from the top of the head */
     left: 50%;
+	display:flex;
     transform: translateX(-50%); /* Centering eyes */
 }
 
@@ -91,7 +94,7 @@
     background-color: white;
     border: 5px solid #00b3ff;
     border-radius: 50%; /* Perfect circle */
-    display: inline-block; /* For horizontal alignment */
+    display: flex; /* For horizontal alignment */
     margin: 0 10px; /* 20px gap between eyes */
 }
 
